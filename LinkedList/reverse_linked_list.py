@@ -44,5 +44,7 @@ if __name__ == '__main__':
         cur = temp
 
     printLinkedList(head)
+
     h = reverse(head)
+    
     printLinkedList(h)

@@ -6,6 +6,12 @@ For example, given the array [-2,1,-3,4,-1,2,1,-5,4],
 the contiguous subarray [4,-1,2,1] has the largest sum = 6.
 """
 
+
+"""
+The way to solve this is via dynamic programming. What we want is to see if the
+elements are increasing. To do this we would keep track of the increasing summation
+and the maximum sum that we currently have.
+"""
 def maxSubArray(nums):
     dp = [0] * len(nums)
     dp[0] = nums[0]
